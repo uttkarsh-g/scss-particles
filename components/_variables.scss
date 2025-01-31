@@ -1,0 +1,16 @@
+$bg: url('../assets/hero bg.jpg') no-repeat center/cover;
+$fonthead: 'Bodoni Moda', serif;
+$fonttext: 'Lato', serif;
+$whiteborder: 1px solid white;
+$rounded: 50px;
+$full: 100%;
+$hide: none;
+$white: #f5f5f5;
+@mixin centervertical {
+  display: flex;
+  align-items: center;
+}
+@mixin centerfull {
+  @include centervertical;
+  justify-content: center;
+}

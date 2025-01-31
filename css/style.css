@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  top: 20px;
+  padding: 0 20px;
+}
+nav #navbar {
+  max-width: 800px;
+  margin: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 50px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 0 20px;
+  color: #f5f5f5;
+  font-family: "Bodoni Moda", serif;
+}
+nav #navbar .links {
+  width: 250px;
+}
+nav #navbar .links ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav #navbar .links ul li {
+  display: inline;
+  list-style: none;
+}
+nav #navbar .links ul li a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+nav #navbar .burgermenu {
+  display: none;
+}
+nav #navbar .burgermenu .close {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  nav #navbar .links {
+    display: none;
+  }
+  nav #navbar .burgermenu {
+    display: block;
+  }
+}
+header #hero {
+  background: url("../assets/hero bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+}
