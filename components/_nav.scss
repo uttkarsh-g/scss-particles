@@ -4,7 +4,8 @@ nav {
   height: 50px;
   top: 20px;
   padding: 0 20px;
-
+  z-index: 5;
+  overflow: hidden;
   #navbar {
     max-width: 800px;
     margin: auto;
@@ -18,18 +19,23 @@ nav {
     color: $white;
     font-family: $fonthead;
 
+    .logo {
+      font-size: 30px;
+    }
+
     .links {
-      width: 250px;
       ul {
         width: $full;
         @include centervertical;
         justify-content: space-between;
+        gap: 20px;
         li {
           display: inline;
           list-style: none;
           a {
             text-decoration: none;
             color: $white;
+            font-size: 18px;
           }
         }
       }
@@ -53,6 +59,9 @@ nav {
 
       .burgermenu {
         display: block;
+        .menu {
+          font-size: 25px;
+        }
       }
     }
   }

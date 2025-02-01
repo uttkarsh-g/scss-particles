@@ -1,0 +1,23 @@
+#service {
+  width: $full;
+  height: $vh;
+  background-color: $black;
+  color: $white;
+  @include centerfull;
+  overflow: hidden;
+
+  #card {
+    padding: 0 20px;
+    @include centervertical;
+    justify-content: space-between;
+
+    .cards {
+      width: 400px;
+      height: 600px;
+      .cardimg {
+        width: $full;
+        // height: ;
+      }
+    }
+  }
+}
