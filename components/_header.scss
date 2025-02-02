@@ -18,7 +18,6 @@ header {
       position: relative;
       z-index: 3;
       color: $white;
-      text-align: center;
       width: $full;
       h1 {
         font-family: $fonthead;
@@ -52,7 +51,6 @@ header {
       .center {
         h1 {
           font-size: 30px;
-          text-align: center;
         }
         p {
           width: $full;

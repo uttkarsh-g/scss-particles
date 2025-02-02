@@ -19,3 +19,7 @@ $black: #000000;
 @mixin lineh {
   line-height: 1;
 }
+@mixin heading {
+  font-size: 50px;
+  font-family: $fonthead;
+}

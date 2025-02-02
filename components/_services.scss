@@ -2,22 +2,50 @@
   width: $full;
   height: $vh;
   background-color: $black;
+  padding: 100px 0;
   color: $white;
   @include centerfull;
-  overflow: hidden;
+  flex-direction: column;
+  gap: 50px;
+  .heading {
+    @include heading;
+  }
 
   #card {
     padding: 0 20px;
     @include centervertical;
     justify-content: space-between;
-
+    gap: 50px;
     .cards {
-      width: 400px;
-      height: 600px;
-      .cardimg {
+      cursor: pointer;
+      width: 300px;
+      .card-img {
         width: $full;
-        // height: ;
+        height: 80%;
+        img {
+          width: $full;
+          height: $full;
+          object-fit: cover;
+        }
       }
+      .card-cnt {
+        h3 {
+          font-size: 25px;
+        }
+      }
+      .card-cnt:hover > p {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media (max-width: 1160px) {
+  #service {
+    height: fit-content;
+
+    #card {
+      flex-direction: column;
+      gap: 50px;
     }
   }
 }

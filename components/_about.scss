@@ -1,10 +1,14 @@
 #about {
   width: $full;
-  height: $vh;
+  padding: 100px 50px;
   background-color: $black;
   color: $white;
   @include centerfull;
-
+  flex-direction: column;
+  gap: 50px;
+  .heading {
+    @include heading;
+  }
   #aboutcenter {
     padding: 0 20px;
     gap: 20px;
@@ -22,77 +26,32 @@
 
     #aboutcnt {
       width: 50%;
+      font-family: $fonttext;
+      p {
+        margin-top: 20px;
+      }
     }
   }
 }
-@media (max-width: 490px) {
+@media (max-width: 820px) {
   #about {
+    padding: 100px 0;
     #aboutcenter {
       flex-direction: column;
 
       #teamimg {
         width: $full;
+        height: 500px;
 
         img {
           width: $full;
           height: $full;
+          object-fit: cover;
         }
       }
 
       #aboutcnt {
         width: $full;
-      }
-    }
-  }
-}
-@media (min-width: 490px) and (max-width: 768px) {
-  header {
-    #hero {
-      .center {
-        h1 {
-          font-size: 30px;
-        }
-        p {
-          width: $full;
-          font-size: 16px;
-        }
-        .cta {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-}
-@media (min-width: 769px) and (max-width: 992px) {
-  header {
-    #hero {
-      .center {
-        h1 {
-          font-size: 38px;
-        }
-        p {
-          font-size: 18px;
-        }
-        .cta {
-          font-size: 16px;
-        }
-      }
-    }
-  }
-}
-@media (min-width: 993px) and (max-width: 1400px) {
-  header {
-    #hero {
-      .center {
-        h1 {
-          font-size: 50px;
-        }
-        p {
-          font-size: 18px;
-        }
-        .cta {
-          font-size: 18px;
-        }
       }
     }
   }

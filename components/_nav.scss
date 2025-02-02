@@ -7,7 +7,7 @@ nav {
   z-index: 5;
   overflow: hidden;
   #navbar {
-    max-width: 800px;
+    width: 800px;
     margin: auto;
     height: 100%;
     @include centervertical;
@@ -53,6 +53,7 @@ nav {
 @media (max-width: 820px) {
   nav {
     #navbar {
+      width: 100%;
       .links {
         display: $hide;
       }
