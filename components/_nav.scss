@@ -5,7 +5,7 @@ nav {
   top: 20px;
   padding: 0 20px;
   z-index: 5;
-  overflow: hidden;
+  // overflow: hidden;
   #navbar {
     width: 800px;
     margin: auto;
@@ -22,29 +22,33 @@ nav {
     .logo {
       font-size: 30px;
     }
-
-    .links {
-      ul {
-        width: $full;
-        @include centervertical;
-        justify-content: space-between;
-        gap: 20px;
-        li {
-          display: inline;
-          list-style: none;
-          a {
-            text-decoration: none;
-            color: $white;
-            font-size: 18px;
+    .wrapper {
+      .links {
+        ul {
+          width: $full;
+          @include centervertical;
+          justify-content: space-between;
+          gap: 20px;
+          li {
+            display: inline;
+            list-style: none;
+            a {
+              text-decoration: none;
+              color: $white;
+              font-size: 18px;
+            }
           }
         }
       }
     }
 
     .burgermenu {
+      cursor: pointer;
       display: $hide;
       .close {
         display: $hide;
+        position: relative;
+        z-index: 5;
       }
     }
   }
@@ -54,7 +58,7 @@ nav {
   nav {
     #navbar {
       width: 100%;
-      .links {
+      .wrapper {
         display: $hide;
       }
 
@@ -62,6 +66,8 @@ nav {
         display: block;
         .menu {
           font-size: 25px;
+          position: relative;
+          z-index: 5;
         }
       }
     }

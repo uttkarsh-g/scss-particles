@@ -9,3 +9,36 @@ body {
   scroll-behavior: smooth;
   text-align: center;
 }
+.overflow {
+  overflow: hidden;
+}
+.active {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 230px;
+  height: 100vh;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  background-color: black;
+  .links {
+    ul {
+      width: $full;
+      @include centerfull;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+.hamactive {
+  .menu {
+    display: none;
+  }
+  .close {
+    font-size: 25px;
+    display: block !important;
+  }
+}
